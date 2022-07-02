@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDragon - JavaScript Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainmenu.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
+ 
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="v4k.mp4" type="video/mp4">
+  </video>
+    <div class="gameContainer" style=" position: fixed;">
+      <div id="gameContainer">
+        <button  type="button" class="btn" onclick="displayMainMenu()"><i class="fa-solid fa-gear"></i></button>
+        <!-- <button onclick="playGame()">play</button>
+        <button onclick="stopGame()">pause</button>
+        <button onclick="prick1()">Reset</button> -->
+        <div class="gameOver">Welcome to i Man Adventures</div>
+        <!-- <div class="gameOver">Welcome to iDragon - Created by Harry</div> -->
+        <div class="dino"></div>
+        <div id="scoreCont">Your Score: 0</div>
+        <div class="obstacle obstacleAni"></div>
+    </div>
+    <div id="allthethings" class="allthethings" style="display: none;">
+        <div id="left"></div>
+        <div id="single" class="margin-class single" onclick="displayResume()"><p></p></div>
+        <div id="multiplayer" class="margin-class" onclick="prick1()"><P>RESTART GAME</p></div>
+        <div id="options" class="margin-class" onclick="puaseSound()"><P class="options"></p></div>
+        <div id="credits" class="margin-class"><P><a href="./credit.html">CREDITS</a></p></div>
+        <div id="right"></div>
+        
+        <div id="exit" onclick="window.close()"></div>
+        <div id="circle"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
